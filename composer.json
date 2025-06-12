@@ -4,7 +4,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ness\\Progreso\\": "src/"
+            "Ness\\Progreso\\": "src/Progreso/",
+            "Ness\\Progreso\\SSE\\": "src/SSE/"
         }
     },
     "authors": [
