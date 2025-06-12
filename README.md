@@ -16,6 +16,32 @@ Librería PHP para gestionar y monitorear el progreso de tareas, con soporte par
    git clone git@github.com:villafanenestor/progreso-library.git
    cd progreso
    ```
+## Instalación desde Composer (usando GitHub)
+
+Si quieres usar esta librería en otro proyecto sin publicarla en Packagist, agrega lo siguiente a tu `composer.json`:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/villafanenestor/progreso-library.git"
+    }
+  ],
+  "require": {
+    "ness/progreso": "dev-main"
+  }
+}
+```
+
+Luego ejecuta en tu terminal:
+
+```bash
+composer update
+```
+
+Esto descargará la librería y podrás usarla con el autoload de Composer.
+
 
 ## Uso básico
 
