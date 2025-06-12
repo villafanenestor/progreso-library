@@ -1,0 +1,17 @@
+{
+    "name": "ness/progreso",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ness\\Progreso\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nestor Villafane",
+            "email": "mass.nestor@gmail.com"
+        }
+    ],
+    "require": {}
+}
