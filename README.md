@@ -13,13 +13,8 @@ Librería PHP para gestionar y monitorear el progreso de tareas, con soporte par
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/progreso.git
+   git clone git@github.com:villafanenestor/progreso-library.git
    cd progreso
-   ```
-
-2. Instala las dependencias con Composer:
-   ```bash
-   composer install
    ```
 
 ## Uso básico
