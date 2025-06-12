@@ -1,0 +1,25 @@
+/vendor/
+composer.lock
+
+# Archivos temporales y de sistema
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Archivos de entorno
+.env
+
+# Archivos de bases de datos temporales
+*.sqlite
+
+# Archivos de pruebas
+test.php
+
+# Archivos de IDEs y editores
+.vscode/
+.idea/
+*.bak
+
+# Archivos de caché
+.cache/
