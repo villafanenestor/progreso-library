@@ -119,9 +119,9 @@ class ProgresoRepository
     }
 
 
-    public function limpiarProgresosAntiguos($dias = 1): void
+    public function limpiarProgresosAntiguos($minutos = 30): void
     {
-        $fechaLimite = date('Y-m-d H:i:s', strtotime("-$dias days"));
+        $fechaLimite = date('Y-m-d H:i:s', strtotime("-$minutos minutes"));
         $sql = 'DELETE FROM progreso WHERE fecha_creacion < :fecha_limite';
         $stmt = $this->db->prepare($sql);
         $stmt->execute([':fecha_limite' => $fechaLimite]);
