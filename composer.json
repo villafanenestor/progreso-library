@@ -8,6 +8,9 @@
             "Ness\\Progreso\\SSE\\": "src/SSE/"
         }
     },
+    "require": {
+        "php" : ">=8.3"
+    },
     "authors": [
         {
             "name": "Nestor Villafane",
