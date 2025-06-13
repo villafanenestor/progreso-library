@@ -14,10 +14,12 @@ class ProgressManager
     private SSEHandler $sse;
     private int $tiempoEspera = 30;
 
-    public function __construct(int $sleep = 0)
+    public function __construct(int $sleep = 0, int $segundosEspera = 30)
     {
         $this->repo = new ProgresoRepository();
         $this->sse = new SSEHandler();
+        $this->repo->limpiarProgresosAntiguos();
+        $this->tiempoEspera = $segundosEspera;
         sleep($sleep); // Simula un tiempo de espera para evitar problemas de conexión
     }
 
