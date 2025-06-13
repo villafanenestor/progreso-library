@@ -32,8 +32,12 @@ class SSEHandler
             echo "data: {$line}\n";
         }
         echo "\n";
-        @ob_flush();
-        @flush();
+        if (ob_get_level() > 0) {
+            while (ob_get_level() > 0) {
+                ob_end_flush();
+            }
+        }
+        flush();
     }
 
     public function sendNotificacion(array $data, ?int $id = null)
@@ -93,7 +97,6 @@ class SSEHandler
         $data = ['error' => $message];
         $this->sendEvent($data, 'error', $id);
     }
-
 }
 
 // Ejemplo de uso:
